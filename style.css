@@ -1,28 +1,78 @@
 body{
+  /* background-color: #2C2F33; */
+  /* margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; */
   background-color: white
 }
 #goodDate{
   text-align: center;
-  font-weight: bolder;
-  font-size: 30px;
-  color: rgb(36, 104, 194);
+  color: red;
 }
+/* input[type="checkbox"]{
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+.check{
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  background: #092c3e;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in 0.5s;
+}
+input[type="checkbox"]:checked ~ .check{
+  background: #fff;
+  box-shadow: 0 0 0 3000px #092c3e;
+}
+.check::before{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ .check::before{
+  transform: translateX(-50px);
+}
+.check:after{
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #092c3e;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+  transform: translateX(50px);
 
-
+}
+input[type="checkbox"]:checked ~ .check:after{
+  transform: translateX(0px);
+} */
 h1{
-  color: rgb(51 129 195);
-  font-weight: bolder;
+  color: green;
   text-align: center;
-  font-size: 40px;
-  
 }
-
+/* section{
+  background-color: #23272A;
+} */
 footer{
   text-align: center;
 }
-a.insta{
-  margin-right: 102px;
-}
+
 .shitfRight{
   float: right;
   padding: 20px ;
@@ -46,34 +96,28 @@ a.insta{
 .center{
   text-align: center;
   font-size: 25px;
-  background-color: rgb(51 129 195);
+  background-color: rgb(6, 90, 45);
   margin: 20px;
 }
 /* here is how to do buttons for pages change color when you hover over it */
 .lback:link, .lback:visited {
   background-color: white;
   color: black;
-  border: 2px solid #2a75b5;
+  border: 2px solid green;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 }
 .lback:hover, .lback:active {
-  background-color: rgb(13, 81, 126);
+  background-color: green;
   color: white;
 }
 /* --------------------------------------------------------------------- */
-
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
-img {
-  vertical-align: middle;
-  
-}
-
-
+img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
@@ -166,4 +210,45 @@ img {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
 
+/* #content{
+  width: 400px;
+  background: #fff;
+  padding: 20px;
+  padding-top: 0;
+  font-family: calibri;
+  font-size: 18px;
+  color: #444;
+  margin: 0 auto;
+
+  max-height: 270px;
+  overflow: hidden;
+
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+
+}
+
+#content.open{
+  max-height: 2000px;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+  
+}
+
+#show-more{
+  background:#1594e5;
+  color: #fff;
+  font-family: calibri;
+  display: block;
+  width: 160px;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  cursor: pointer;
+} */
