@@ -101,4 +101,3 @@ let lima=new CookieStand ('Lima', 4.6, 16,2);
 lima.getCustomer();
 lima.cookieHour();
 lima.render();
-row1();
