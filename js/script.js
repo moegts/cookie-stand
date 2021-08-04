@@ -2,11 +2,15 @@
 
 let cookieSales = document.getElementById('cookieSales');
 let divElement = document.createElement('div');
-    cookieSales.appendChild(divElement)
+cookieSales.appendChild(divElement)
 
-    let tableEle = document.createElement('table');
-    cookieSales.appendChild(tableEle);
+let tableEle = document.createElement('table');
+cookieSales.appendChild(tableEle);
 
+// let addLocation = document.getElementById('addLocation')
+// console.log(addLocation);
+let locationHtml = document.getElementById("addLocation")
+console.log(locationHtml)
 
 let wrokingHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm']
 let allRes = [];
@@ -92,7 +96,7 @@ tableFooter();
 
 function tableHead() {
 
-    
+
 
     let tr1 = document.createElement('tr');
     tableEle.appendChild(tr1);
@@ -132,13 +136,17 @@ function tableFooter() {
         tr3.appendChild(th4);
     }
 
-    let hourlyTotal=0;
-    for (let j=0; j<allRes.length;j++){
-        hourlyTotal+=allRes[j].total;
+    let hourlyTotal = 0;
+    for (let j = 0; j < allRes.length; j++) {
+        hourlyTotal += allRes[j].total;
 
     }
-    let th5=document.createElement('th');
-    th5.textContent=hourlyTotal;
+    let th5 = document.createElement('th');
+    th5.textContent = hourlyTotal;
     tr3.appendChild(th5);
+}
 
+addLocation.addEventListener('submit', submitHandler)
+function submitHandler(){
+    alert("hi");
 }

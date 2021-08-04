@@ -42,6 +42,23 @@
     </header> <!-- logo & pages links & social icons -->
     <script src="./js/fun.js"></script>
 
+    <form id="addLocation">
+        <label for="loacationName">Loacation Name</label>
+        <input type="text" name="" id="loacationName" required>
+
+        <label for="averageCookies">Average Cookies</label>
+        <input type="number" min="0.001" value="0" ondrop="return false;" name="averageCookies" onpaste="return false;" id="averageCookies">
+
+        <label for="maxCookies">Max Cookies</label>
+        <input type="number" min="0.001" value="0" ondrop="return false;" name="maxCookies" onpaste="return false;" id="maxCookies">
+
+        <label for="minCookies">Min Cookies</label>
+        <input type="number" min="0.001" value="0" ondrop="return false;" name="minCookies" onpaste="return false;" id="minCookies">
+
+        <input type="submit" value="Add to Table">
+
+    </form>
+
     <main id="cookieSales">
     </main>
 
