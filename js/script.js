@@ -7,6 +7,9 @@ cookieSales.appendChild(divElement)
 let tableEle = document.createElement('table');
 cookieSales.appendChild(tableEle);
 
+tableEle.setAttribute("id", "allTable"); // I did create this to add id to the table
+
+
 // let addLocation = document.getElementById('addLocation')
 // console.log(addLocation);
 let locationHtml = document.getElementById("addLocation")
@@ -121,6 +124,9 @@ function tableFooter() {
 
     let tr3 = document.createElement('tr');
     tableEle.appendChild(tr3);
+    tr3.setAttribute("id", "trHead"); // I did create this to add id to the table footer
+
+    
 
     let th3 = document.createElement('th');
     th3.textContent = 'Total per Hour';
@@ -146,7 +152,21 @@ function tableFooter() {
     tr3.appendChild(th5);
 }
 
+
+
 addLocation.addEventListener('submit', submitHandler)
-function submitHandler(){
-    alert("hi");
+function submitHandler(event){
+    // to stop the refresh : event.preventDefault();
+    event.preventDefault();
+    let loacationName = event.target.loacationName.value;
+    let averageCookies = event.target.averageCookies.value;
+    let maxCookies = event.target.maxCookies.value;
+    let minCookies = event.target.minCookies.value;
+    // console.log(loacationName, averageCookies, maxCookies, minCookies)
+    let newLocation = new CookieStand(loacationName, averageCookies, maxCookies, minCookies);
+    
+    newLocation.getCustomer();
+    newLocation.cookieHour();
+    newLocation.render(tableFooter());
+    document.getElementById("trHead").remove(); // remove the total
 }
