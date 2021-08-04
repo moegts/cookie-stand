@@ -16,6 +16,9 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
   }
+h6{
+  margin-top: 0.5cm;
+}
 .imgFish1{
   align-items: center;
   margin-left: 450px;
@@ -95,6 +98,9 @@ table{
   
   footer{
     text-align: center;
+    display: block;
+    margin-top: 25px;
+
   }
   a.insta{
     margin-right: 102px;
@@ -258,6 +264,5 @@ table {
   border-spacing: 5px;
 }
 
-footer{
-  display: block;
-}
+
+
