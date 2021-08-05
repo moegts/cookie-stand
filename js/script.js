@@ -156,7 +156,10 @@ function tableFooter() {
 
 addLocation.addEventListener('submit', submitHandler)
 function submitHandler(event){
-    // to stop the refresh : event.preventDefault();
+    // document.getElementById("trHead").remove(); // remove the total
+    // // to stop the refresh : event.preventDefault();
+    document.getElementById("allTable").deleteRow(-1);
+
     event.preventDefault();
     let loacationName = event.target.loacationName.value;
     let averageCookies = event.target.averageCookies.value;
@@ -167,6 +170,6 @@ function submitHandler(event){
     
     newLocation.getCustomer();
     newLocation.cookieHour();
-    newLocation.render(tableFooter());
-    document.getElementById("trHead").remove(); // remove the total
+    newLocation.render();
+    tableFooter()
 }
