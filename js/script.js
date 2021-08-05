@@ -15,8 +15,6 @@ tableEle.setAttribute("id", "allTable"); // I did create this to add id to the t
 let locationHtml = document.getElementById("addLocation")
 console.log(locationHtml)
 
-}
-
 let wrokingHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm']
 let allRes = [];
 function CookieStand(location, avgCookiesCustomer, max, min) {
@@ -158,7 +156,10 @@ function tableFooter() {
 
 addLocation.addEventListener('submit', submitHandler)
 function submitHandler(event){
-    // to stop the refresh : event.preventDefault();
+    // document.getElementById("trHead").remove(); // remove the total
+    // // to stop the refresh : event.preventDefault();
+    document.getElementById("allTable").deleteRow(-1);
+
     event.preventDefault();
     let loacationName = event.target.loacationName.value;
     let averageCookies = event.target.averageCookies.value;
@@ -169,6 +170,6 @@ function submitHandler(event){
     
     newLocation.getCustomer();
     newLocation.cookieHour();
-    newLocation.render(tableFooter());
-    document.getElementById("trHead").remove(); // remove the total
+    newLocation.render();
+    tableFooter()
 }
