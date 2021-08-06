@@ -8,7 +8,7 @@ let tableEle = document.createElement('table');
 cookieSales.appendChild(tableEle);
 
 tableEle.setAttribute('id', 'allTable'); // I did create this to add id to the table
-tableEle.setAttribute('style', 'transform: scale(0.5819); position: relative; top: -89px; left: -343.5px;');
+tableEle.setAttribute('style', 'transform: scale(0.8885); position: relative; top: -18px; left: -58.5px;');
 
 
 
@@ -120,6 +120,8 @@ function tableHead() {
   let th3 = document.createElement('th');
   th3.textContent = 'Location daily Total ';
   tr1.appendChild(th3);
+  th3.setAttribute('id', 'verticalTotal');
+
 }
 
 function tableFooter() {
