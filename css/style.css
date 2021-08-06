@@ -1,20 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+main{
+  height: 330px;
+}
 header{
   background-color: burlywood;
 }
 
-
+#thTotal{
+  background-color: red;
+}
+#thTotalNo{
+  background-color: firebrick;
+}
 
 h1 {
-    color: saddlebrown;
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(43, 135, 255);
+    font-family: sans-serif;
   }
 
   h2 { color: rgb(51 129 195);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
   }
   h3 { color: rgb(51 129 195);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 8px;
   }
 h6{
   margin-top: 0.5cm;
@@ -31,8 +44,7 @@ h6{
   margin: 50px;
 }
 .h2Class{
-  margin-top: 50px;
-  margin-left: 400px;
+
 
   font-size: 24px;
 }
@@ -40,14 +52,10 @@ h6{
   margin-top: 25px;
 }
 .mainImg{
-  width: 52.5%;
+  width: 100%;
   height: auto;
-  
 }
-table{
-  margin-left: 200px;
-  margin-right: 200px;
-}
+
 
   table, th, td {
     border: 0.5px solid black;
@@ -59,9 +67,7 @@ table{
     color: honeydew;
   }
   .pSec{
-    margin-top: 50px;
-    margin-left: 400px;
-    margin-right: 400px;
+
     font-size: 24px;
 
   }
@@ -78,10 +84,9 @@ table{
   th{
     background-color: cornflowerblue;
   }
-  body{
-    background-color: white
-  }
+
   #goodDate{
+    text-align: center;
     font-weight: bolder;
     font-size: 30px;
     color: rgb(36, 104, 194);
@@ -93,6 +98,7 @@ table{
     font-weight: bolder;
     text-align: center;
     font-size: 40px;
+    font-family: sans-serif;
     
   }
   
@@ -148,13 +154,15 @@ table{
   /* --------------------------------------------------------------------- */
   
   * {box-sizing: border-box}
-  body {font-family: Verdana, sans-serif; margin:0}
-  .mySlides {display: none}
-  img {
-    vertical-align: middle;
-    
+  body {
+    width: 963px;
+    margin: auto;
+    font-family: Verdana, sans-serif;
+    background-color: white
   }
-  
+  .mySlides {display: none}
+
+
   
   
 /* Slideshow container */
@@ -263,6 +271,3 @@ table {
   font-size: 2px;
   border-spacing: 5px;
 }
-
-
-

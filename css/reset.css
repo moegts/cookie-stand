@@ -22,11 +22,15 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Hahmlet', serif;
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	font-family: 'Hahmlet', serif;
+
 }
 body {
 	line-height: 1;
@@ -36,13 +40,19 @@ ol, ul {
 }
 blockquote, q {
 	quotes: none;
+	font-family: 'Hahmlet', serif;
+
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
+	font-family: 'Hahmlet', serif;
+
 	content: '';
 	content: none;
 }
 table {
+	font-family: 'Hahmlet', serif;
+
 	border-collapse: collapse;
 	border-spacing: 0;
 }
